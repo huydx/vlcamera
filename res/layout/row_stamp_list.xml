@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#7F7F7F">
+
+    <com.ktmt.vlcamera.custom.ImageViewNameMap
+            android:id="@+id/stamp_view_row1"
+            android:layout_width="0px"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/app_name"
+            />
+
+    <com.ktmt.vlcamera.custom.ImageViewNameMap
+            android:id="@+id/stamp_view_row2"
+            android:layout_width="0px"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/app_name"
+            />
+</LinearLayout>

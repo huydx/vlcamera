@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">vlcamera</string>
+    <string name="action_settings">Settings</string>
+    <string name="string_facebook_app_id">290388021101608</string>
+    <string name="share_facebook_message">chia sẻ lên facebook</string>
+    <string name="directory">Thư mục</string>
+    <string name="camera">Chụp ảnh</string>
+    <string name="save">Lưu lại</string>
+    <string name="share">Chia sẻ</string>
+    <string name="addtext">Thêm chữ</string>
+</resources>

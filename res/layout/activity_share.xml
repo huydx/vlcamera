@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5F5F5F"
+    android:orientation="horizontal"
+    tools:context=".SplashActivity" >
+
+    <RelativeLayout
+        android:id="@+id/share_layout_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/share_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btn_saveto_dir"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginBottom="1dp"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/share_save_btn" />
+
+            <ImageButton
+                android:id="@+id/btn_share_facebook"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginBottom="1dp"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/share_share_btn" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignRight="@+id/share_layout"
+            android:layout_marginRight="16dp"
+            android:textColor="#FFFFFF"
+            android:text="@string/share" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/share_layout"
+            android:layout_below="@+id/share_layout"
+            android:layout_marginLeft="30dp"
+            android:textColor="#FFFFFF"
+            android:text="@string/save" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/share_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/share_layout_big"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/app_name" >
+    </ImageView>
+
+</RelativeLayout>

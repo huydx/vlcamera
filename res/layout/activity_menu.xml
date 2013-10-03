@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5F5F5F"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/menu_logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null" >
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/menu_logo" >
+        </ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_logo_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:paddingTop="30dp" >
+
+        <ImageButton
+            android:id="@+id/btn_from_dir"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="30dp"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/folder_black" />
+
+        <ImageButton
+            android:id="@+id/btn_take_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/camera_black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_marginRight="18dp"
+        android:text="@string/camera" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginLeft="29dp"
+        android:text="@string/directory" />
+
+</RelativeLayout>
